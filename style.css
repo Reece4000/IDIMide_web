@@ -134,7 +134,7 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: var(--accent-yellow);
+    background: linear-gradient(135deg, var(--accent-yellow) 0%, var(--accent-teal) 100%);
     color: var(--bg-dark);
     display: flex;
     align-items: center;
