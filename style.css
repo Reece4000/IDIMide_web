@@ -6,7 +6,7 @@
 
 :root {
     --bg-dark: #0a0a0a;
-    --text-primary: #ffffff;
+    --text-primary: #30cfd4;
     --text-secondary: #a0a0a0;
     --accent-teal: rgb(0, 255, 170);
     --accent-yellow: rgb(255, 200, 0);
@@ -75,7 +75,7 @@ body {
 
 .subtitle {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
-    color: var(--text-secondary);
+    color: var(--accent-yellow);
     margin-bottom: 2rem;
     font-weight: 300;
 }
@@ -83,7 +83,7 @@ body {
 .features-list {
     font-family: 'Space Mono', monospace;
     font-size: clamp(0.75rem, 1.5vw, 0.95rem);
-    color: var(--accent-yellow);
+    color: white;
     font-weight: 400;
     letter-spacing: 0.05em;
     display: flex;
@@ -144,10 +144,21 @@ body {
     font-size: 0.875rem;
     border: 2px solid var(--bg-dark);
     transition: all 0.2s ease;
+    animation: hotspotPulse 2s ease-in-out infinite;
+}
+
+@keyframes hotspotPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .hotspot:hover .hotspot-number {
     background: var(--accent-teal);
+    animation: none;
 }
 
 .hotspot-tooltip {
