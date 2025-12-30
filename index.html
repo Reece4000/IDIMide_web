@@ -122,7 +122,10 @@
 
     <footer>
         <div class="container">
-            <a href="mailto:your-email@example.com?subject=IDIMide%20Interest" class="subscribe-link">Get Updates</a>
+            <form class="subscribe-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required class="subscribe-input">
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
             <p>&copy; 2025 IDIMide. All rights reserved.</p>
         </div>
     </footer>
