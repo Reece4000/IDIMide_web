@@ -95,7 +95,7 @@ body {
 .features-list {
     font-family: 'Space Mono', monospace;
     font-size: clamp(0.75rem, 1.5vw, 0.95rem);
-    color: var(--text-secondary);
+    color: var(--accent-yellow);
     font-weight: 400;
     letter-spacing: 0.05em;
     display: flex;
